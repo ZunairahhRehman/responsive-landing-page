@@ -1,0 +1,230 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 25px;
+    background: #ff7f50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.hero .btn:hover {
+    background: #e65c00;
+}
+
+/* Features Section */
+#features {
+    background: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #f9f9f9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #555;
+    border-left: 5px solid #333;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+/* Pricing Section */
+#pricing {
+    background: #007BFF;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#pricing h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.price-tier {
+    background: #333;
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+    width: 45%;
+}
+
+.price-tier h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.price-tier p {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ff7f50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* Stack the navigation links */
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        padding-left: 0;
+    }
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /* Adjust features section layout */
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    /* Adjust pricing section layout */
+    .pricing-container {
+        flex-direction: column;
+    }
+    .price-tier {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+    .hero p {
+        font-size: 1.1em;
+    }
+}
